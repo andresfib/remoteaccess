@@ -1,6 +1,7 @@
 /*
  * An URI datatype.  Based upon examples in RFC3986.
- *
+ * From happygiraffe.net
+ * https://code.google.com/p/js-uri/ 
  * TODO %-escaping
  * TODO split apart authority
  * TODO split apart query_string (on demand, anyway)
