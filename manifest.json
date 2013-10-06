@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Access papers remotely",
+  "description": "This extension adds the ezproxy postfix to web addresses",
+  "version": "1.0",
+  "icons": { "16": "images/16application-rtf.png",
+           "48": "images/48application-rtf.png",
+          "128": "images/128application-rtf.png" },
+          
+  "permissions": [
+    "activeTab","webNavigation"	
+  ],
+  "browser_action": {
+  "default_icon": {                    // optional
+      "19": "images/19application-rtf.png",           // optional
+      "38": "images/38application-rtf.png"            // optional
+    },
+    "default_title": "Through proxy"  
+   },
+   
+  "background": {
+    "scripts": ["URI.js","updateURL.js"],
+    "persistent": false
+  }
+}
