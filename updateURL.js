@@ -9,7 +9,6 @@ function updateURL(tab){
 chrome.browserAction.onClicked.addListener(updateURL);
 
 //Automatically add proxy address to urls in the filter list
-chrome.webNavigation.onBeforeNavigate.addListener(updateURL);
-}, {url: [{hostSuffix: 'acm.org'},
+chrome.webNavigation.onBeforeNavigate.addListener(updateURL, {url: [{hostSuffix: 'acm.org'},
 		//   {hostSuffix: 'elsevier.com'}, //Not working
            {hostSuffix: 'ieee.org'}]});
